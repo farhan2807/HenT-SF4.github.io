@@ -1,0 +1,102 @@
+/* h1{
+    text-align: center;
+} */
+ html{
+    position: relative;
+    /* scroll-behavior: smooth; */
+ }
+
+ body{
+    margin-bottom: 100px;
+    margin-top: 30px;
+ }
+ /* .navbar{
+    opacity: .3;
+ } */
+
+.py-5{
+    background-image: url('../img/download.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 320px;
+    background-position: 0 -170px;
+    color: #eaeaea;
+    overflow: hidden;
+}
+
+.about{
+    margin-top: 30px;
+    min-height: 600px;
+}
+
+ .navbar-brand{
+    color: #eee;
+ }
+ .nav-item a{
+    color: #eee;
+ }
+
+.rounded-circle{ 
+    border: 5px solid #eaeaea;
+    box-shadow:1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.py-5 h1, .py-5 p{
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+hr{
+    width: 250px;
+    border-top: 3px solid #333;
+    margin: 10px auto;
+}
+
+section{
+    min-height: 800px;
+}
+
+.pkiri, .pkanan{
+    opacity: 0;
+    transform: translate(-50px,0) rotate(15deg);
+    transition: 1s;
+}
+.pkanan{
+    transform: translate(50px,0) rotate(-15deg);
+}
+
+.pkiri.pmuncul, .pkanan.pmuncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background-color: #333;
+    padding-top: 38px;
+}
+
+footer p{
+    font-size: 0.9em;
+}
+
+.portofolio{
+    background-color:#eee;
+}
+
+.portofolio .thumbnail{
+    /* display: inline-block; */
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: .5s;
+}
+
+.portofolio .thumbnail.muncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
